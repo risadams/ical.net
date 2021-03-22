@@ -9,6 +9,9 @@
     <DebugSymbols Condition=" '$(TargetFramework)' == 'net46' ">true</DebugSymbols>
     <DebugType Condition=" '$(TargetFramework)' == 'net46' ">full</DebugType>
     <PackageId>QRocket.Ical.Net</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/risadams/ical.net</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/risadams/ical.net</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\Ical.Net.xml</DocumentationFile>
