@@ -1,20 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net50</TargetFrameworks>
     <Version>4.1.8</Version>
-    <Authors>Rian Stockbower, Douglas Day</Authors>
-    <Company />
+    <Authors>Rian Stockbower, Douglas Day, Ris Adams</Authors>
+    <Company>Rian Stockbower, Douglas Day, Ris Adams</Company>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\IcalNetStrongnameKey.snk</AssemblyOriginatorKeyFile>
     <DebugSymbols Condition=" '$(TargetFramework)' == 'net46' ">true</DebugSymbols>
     <DebugType Condition=" '$(TargetFramework)' == 'net46' ">full</DebugType>
+    <PackageId>QRocket.Ical.Net</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\Ical.Net.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NodaTime" Version="2.0.2" />
-    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.1.0" />
+    <PackageReference Include="NodaTime" Version="3.0.5" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.7.0" />
     <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
